@@ -11,19 +11,14 @@
   
   
     <meta name="description" content="前期准备Kaili虚拟机
-带监听功能的无线网卡
-
-调试网卡进入Kaili虚拟机
-插上网卡
-打开终端 测试当前的网卡状态
-    iwconfig">
+带监听功能的无线网卡">
   
-  <meta name="description" content="前期准备Kaili虚拟机 带监听功能的无线网卡  调试网卡进入Kaili虚拟机 插上网卡 打开终端 测试当前的网卡状态     iwconfig">
+  <meta name="description" content="前期准备Kaili虚拟机 带监听功能的无线网卡">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Aireplay Wi-Fi攻击">
 <meta property="og:url" content="http://example.com/2022/09/02/Aircrack-Wi-Fi%E6%94%BB%E5%87%BB/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前期准备Kaili虚拟机 带监听功能的无线网卡  调试网卡进入Kaili虚拟机 插上网卡 打开终端 测试当前的网卡状态     iwconfig">
+<meta property="og:description" content="前期准备Kaili虚拟机 带监听功能的无线网卡">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/%E7%BD%91%E5%8D%A1%E7%8A%B6%E6%80%811.png">
 <meta property="og:image" content="http://example.com/images/%E7%BD%91%E5%8D%A1%E7%8A%B6%E6%80%812.png">
@@ -32,7 +27,7 @@
 <meta property="og:image" content="http://example.com/images/%E6%94%BB%E5%87%BB.png">
 <meta property="og:image" content="http://example.com/images/%E6%94%BB%E5%87%BB%E6%95%88%E6%9E%9C.jpeg">
 <meta property="article:published_time" content="2022-09-02T04:12:43.000Z">
-<meta property="article:modified_time" content="2022-09-02T05:20:05.455Z">
+<meta property="article:modified_time" content="2022-09-02T06:01:21.036Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/%E7%BD%91%E5%8D%A1%E7%8A%B6%E6%80%811.png">
@@ -93,20 +88,13 @@
       <h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><pre><code>Kaili虚拟机
 带监听功能的无线网卡
 </code></pre>
+<span id="more"></span>
 <h2 id="调试网卡"><a href="#调试网卡" class="headerlink" title="调试网卡"></a>调试网卡</h2><pre><code>进入Kaili虚拟机
 插上网卡
 打开终端 测试当前的网卡状态
     iwconfig
 </code></pre>
-<p> <img src="/images/%E7%BD%91%E5%8D%A1%E7%8A%B6%E6%80%811.png"></p>
-<span id="more"></span>
-<pre><code>可以看到 Mode:Manage 代表并未开启监听模式 (monitor)
-输入开启指令	
-    sudo airmon-ng start wlan0
-再次查看
-    iwconfig
-</code></pre>
-<p> <img src="/images/%E7%BD%91%E5%8D%A1%E7%8A%B6%E6%80%812.png"></p>
+<p> <img src="/images/%E7%BD%91%E5%8D%A1%E7%8A%B6%E6%80%811.png"><br>    可以看到 Mode:Manage 代表并未开启监听模式 (monitor)<br>    输入开启指令	<br>        sudo airmon-ng start wlan0<br>    再次查看<br>        iwconfig<br> <img src="/images/%E7%BD%91%E5%8D%A1%E7%8A%B6%E6%80%812.png"></p>
 <pre><code>可以看到 Mode:Monitor 代表已经开启监听模式
 </code></pre>
 <h2 id="攻击过程"><a href="#攻击过程" class="headerlink" title="攻击过程"></a>攻击过程</h2><pre><code>扫描Wi-Fi频段
